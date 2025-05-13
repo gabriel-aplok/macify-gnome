@@ -16,7 +16,7 @@ rm -rf WhiteSur-gtk-theme
 echo "== Instalando ícones WhiteSur =="
 git clone https://github.com/vinceliuice/WhiteSur-icon-theme.git
 cd WhiteSur-icon-theme
-./install.sh
+./install.sh -a
 cd ..
 rm -rf WhiteSur-icon-theme
 
