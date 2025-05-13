@@ -27,21 +27,4 @@ cd WhiteSur-cursors
 cd ..
 rm -rf WhiteSur-cursors
 
-echo "== Instalando Dash to Dock =="
-sudo apt install -y gnome-shell-extension-dash-to-dock
-
-echo "== Ativando extensões úteis =="
-gnome-extensions enable dash-to-dock@micxgx.gmail.com || true
-gnome-extensions enable ubuntu-appindicators@ubuntu.com || true
-
-echo "== Aplicando tema com gsettings =="
-gsettings set org.gnome.desktop.interface gtk-theme "WhiteSur-Dark"
-gsettings set org.gnome.shell.extensions.user-theme name "WhiteSur-Dark"
-gsettings set org.gnome.desktop.interface icon-theme "WhiteSur"
-gsettings set org.gnome.desktop.interface cursor-theme "WhiteSur-cursors"
-gsettings set org.gnome.desktop.interface font-name 'Cantarell 11'
-
-echo "== Movendo dock para baixo =="
-gsettings set org.gnome.shell.extensions.dash-to-dock dock-position 'BOTTOM'
-
 echo "== Finalizado! Reinicie a sessão ou o sistema para aplicar tudo =="
